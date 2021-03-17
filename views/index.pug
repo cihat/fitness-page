@@ -1,5 +1,184 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  title Fox - Free One Page Template, Free Fitness HTML5 Template by FreeHTML5.co
+  // Bootstrap CSS
+  link(href='css/animate.css' rel='stylesheet')
+  link(rel='stylesheet' href='css/bootstrap.min.css' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet')
+  link(rel='stylesheet' href='css/style.css')
+.container-fluid.pl-0.pr-0.bg-img.clearfix.parallax-window2(data-parallax='scroll' data-image-src='images/banner2.jpg')
+  nav.navbar.navbar-expand-md.navbar-dark
+    .container
+      // Brand
+      a.navbar-brand.mr-auto(href='#')
+        img(src='images/fitness-logo.png' alt='FoxPro' id="logo")
+      // Toggler/collapsibe Button
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+        span.navbar-toggler-icon
+      // Navbar links
+      #collapsibleNavbar.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='#') Ana Sayfa
+          li.nav-item
+            a.nav-link(href='#about-us') Hakkında
+          li.nav-item
+            a.nav-link(href='#') Kurslar
+          li.nav-item
+            a.nav-link(href='#contact') İLETİŞİM
+        ul.navbar-nav.ml-5
+  .container
+    .fh5co-banner-text-box
+      .quote-box.pl-5.pr-5.wow.bounceInRight
+        h2
+          | Antrenör 
+          br
+          span İsmail FİDAN
+      //- a.btn.text-uppercase.btn-outline-danger.btn-lg.mr-3.mb-3.wow.bounceInUp(href='#')  What&apos;s new
+      //- a.btn.text-uppercase.btn-outline-danger.btn-lg.mb-3.wow.bounceInDown(href='#')  KURSLAR
+.container-fluid.fh5co-network
+  .container
+    .row
+      .col-md-6
+        h4.wow.bounceInUp FOR NETWORK
+        h2.wow.bounceInRight ÜYELER
+        hr
+        h5.wow.bounceInLeft NETWORK SUMMER 2017
+        p.wow.bounceInDown
+          | The lowdown on Blood Flow Restriction training &bull; FREE CEC/CPD &bull; &ZeroWidthSpace;Let&apos;s compare &ZeroWidthSpace;Raw Vs Cooked &bull; Building Ab, Core &amp; Pelvic strength &bull; Get&ZeroWidthSpace; clients short-term wins from long-term goals &bull; So you want to operate multiple clubs? + LOADS MORE
+      .col-md-6
+        figure.wow.bounceInDown
+          img.img-fluid(src='images/about-img.jpg' alt='gym')
+#about-us.container-fluid.fh5co-about-us.pl-0.pr-0.parallax-window(data-parallax='scroll' data-image-src='images/about-us-bg.jpg')
+  .container
+    .col-sm-6.offset-sm-6
+      h2.wow.bounceInLeft(data-wow-delay='.25s') Hakkımızda 
+      hr
+      p.wow.bounceInRight(data-wow-delay='.25s')
+        | Antrenörler, sporcular ve ciddi müşteriler, antrenmanlarını renklendirmek ve bedenleri ve zihinleri için gerçekten benzersiz bir meydan okuma sağlamak için en sert, en acımasız üretken antrenman tekniklerini arıyorlar. Düşününki:  one-arm push-ups, pistols, pull-ups, handstands, hanging levers ve benzerleri! Eğer istersen
+      a.btn.btn-lg.btn-outline-danger.d-inline-block.text-center.mx-auto.wow.bounceInDown Daha Fazla Öğren
+.container-fluid.fh5co-content-box
+  .container
+    .row
+      .col-md-5.pr-0
+        img.img-fluid.wow.bounceInLeft(src='images/rode-gym.jpg' alt='gym')
+      .col-md-7.pl-0
+        .wow.bounceInRight(data-wow-delay='.25s')
+          .card-img-overlay
+            p
+              | Great weekend, met lots of cool people and took away quite a bit. Thank you for the experience, and to you and your professional team for
+              | making things seem
+          img.img-fluid(src='images/gym-girls.jpg' alt='girls in gym')
+    .row.trainers.pl-0.pr-0
+      .col-12.bg-50
+        .quote-box2.wow.bounceInDown(data-wow-delay='.25s')
+          h2  EĞİTMENLER
+      .col-md-6.pr-5.pl-5
+        .card.text-center.wow.bounceInLeft(data-wow-delay='.25s')
+          img.card-img-top.rounded-circle.img-fluid(src='images/trainers1.jpg' alt='Card image')
+          .card-body.mb-5
+            h4.card-title JENIFERR
+            p.card-text
+              | Antrenörler, sporcular ve ciddi müşteriler, antrenmanlarını renklendirmek ve gerçekten benzersiz bir meydan okuma sağlamak için en sert, en acımasız üretken antrenman tekniklerini arıyorlar.
+      .col-md-6.pl-5.pr-5
+        .card.text-center.wow.bounceInRight(data-wow-delay='.25s')
+          img.card-img-top.rounded-circle.img-fluid(src='images/trainers2.jpg' alt='Card image')
+          .card-body.mb-5
+            h4.card-title HAMZA HOCA
+            p.card-text
+              | Antrenörler, sporcular ve ciddi müşteriler, antrenmanlarını renklendirmek ve gerçekten benzersiz bir meydan okuma sağlamak için en sert, en acımasız üretken antrenman tekniklerini arıyorlar.
+    .row.gallery
+      .col-md-4
+        .card
+          .card-body.mb-4.wow.bounceInLeft(data-wow-delay='.25s')
+            h4.card-title FILEX
+            p.card-text
+              | I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event.
+          img.card-img-top.img-fluid.wow.bounceInRight(data-wow-delay='.25s' src='images/g1.jpg' alt='Card image')
+      .col-md-4
+        .card
+          img.card-img-top.img-fluid.wow.bounceInUp(data-wow-delay='.25s' src='images/g2.jpg' alt='Card image')
+          .card-body.mt-4.wow.bounceInDown(data-wow-delay='.25s')
+            h4.card-title IGNITING
+            p.card-text
+              | I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event.
+      .col-md-4
+        .card
+          .card-body.mb-4.wow.bounceInRight(data-wow-delay='.25s')
+            h4.card-title PASSION
+            p.card-text
+              | I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event.
+          img.card-img-top.img-fluid.wow.bounceInLeft(data-wow-delay='.25s' src='images/g3.jpg' alt='Card image')
+footer.container-fluid
+  .container
+    .row
+      .col-md-3.footer1.d-flex.wow.bounceInLeft(data-wow-delay='.25s')
+        .d-flex.flex-wrap.align-content-center
+          //- a(href='#')
+          //-   img(src='images/logo.png' alt='logo')
+          //- p
+          //-   | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          //-   | dolor. Ae
+          //- p
+          //-   | &copy; 2018 Foxpro. All rights reserved.
+          //-   br
+          //-   |  Design by 
+          //-   a(href='https://freehtml5.co' target='_blank') FreeHTML5
+          //-   | .
+      #contact.col-md-6.footer2.wow.bounceInUp(data-wow-delay='.25s')
+        .form-box
+          h4 Bize Ulaşın
+          table.table.table-responsive.d-table
+            tr
+              td
+                input.form-control.pl-0(type='text' placeholder='İSİM')
+              td
+                input.form-control.pl-0(type='email' placeholder='EMAIL')
+            tr
+              td(colspan='2')
+            tr
+              td(colspan='2')
+                input.form-control.pl-0(type='text' placeholder='ADRES')
+            tr
+              td(colspan='2')
+            tr
+              td(colspan='2')
+                input.form-control.pl-0(type='text' placeholder='MESAJ')
+            tr
+              td(colspan='2')
+            tr
+              td.text-center.pl-0(colspan='2')
+                button.btn.btn-dark(type='submit') GÖNDER
+      .col-md-3.footer3.wow.bounceInRight(data-wow-delay='.25s')
+        h5 ADRES
+        p
+          | YÜZYIL MAHALLESİ
+          | ESENLER, İSTANBUL
+        h5 TELEFON
+        p 534 534 34 34
+        h5 EMAIL
+        p email@example.com
+        .social-links
+          ul.nav.nav-item
+            li
+              a.btn.btn-secondary.mr-1.mb-2(href='https://www.facebook.com/fh5co')
+                img(src='images/facebook.png' alt='facebook')
+            li
+              a.btn.btn-secondary.mr-1.ml-1.mb-2(href='#')
+                img(src='images/facebook.png' alt='facebook')
+            li
+              a.btn.btn-secondary.mr-1.ml-1.mb-2(href='#')
+                img(src='images/facebook.png' alt='facebook')
+            li
+              a.btn.btn-secondary.ml-1.mb-2(href='#')
+                img(src='images/facebook.png' alt='facebook')
+// Optional JavaScript
+// jQuery first, then Bootstrap JS, ...
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/parallax.js')
+script(src='js/wow.js')
+script(src='js/main.js')
